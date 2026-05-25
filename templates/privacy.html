@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Grissom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="progress-bar"></div>
+    <nav id="main-nav">
+        <a href="/" class="nav-logo" id="nav-logo">
+            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" alt="Grissom Logo" class="nav-logo-mark">
+            <span class="nav-wordmark">Grissom</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <a href="mailto:info@grissomsa.com" class="nav-contact" id="nav-contact">info@grissomsa.com</a>
+    </nav>
+
+    <section class="hero" style="padding:0;max-width:100%;margin:0;">
+        <div class="hero-left">
+            <div class="hero-left-img" style="background-image: url('{{ url_for('static', filename='images/approach.jpg') }}')"></div>
+            <div class="hero-left-overlay"></div>
+            <div class="hero-left-content">
+                <p class="hero-eyebrow">Privacy Policy</p>
+                <h1 class="hero-title">
+                    <span class="title-word">Data</span>
+                    <span class="title-word">Protection</span>
+                    <span class="title-word">Principles</span>
+                </h1>
+                <p class="hero-subtitle">Grissom is committed to protecting sensitive information within the internal group network.</p>
+            </div>
+        </div>
+        <div class="hero-right">
+            <p class="hero-intro">This privacy policy outlines how Grissom manages and safeguards information that supports group operations.</p>
+            <div class="divider-line"></div>
+            <p class="hero-body">Grissom handles data with care, ensuring that internal corporate governance materials and group-wide administrative records are managed consistently and securely.</p>
+        </div>
+    </section>
+
+    <div class="faq-section">
+        <div class="faq-inner">
+            <p class="faq-label">Privacy Overview</p>
+            <h2 class="faq-heading">How Grissom manages data and information</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">Data Storage</h3>
+                <p class="faq-answer">Information is stored using secure internal systems and is only accessible by authorized personnel within the group.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Usage</h3>
+                <p class="faq-answer">Data supports administrative continuity, governance, and strategic alignment for group businesses—it is not used for external marketing or third-party sales.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Contact</h3>
+                <p class="faq-answer">For privacy enquiries, contact <a href="mailto:info@grissomsa.com">info@grissomsa.com</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" alt="Grissom Logo" class="nav-logo-mark" style="width: 24px; height: 24px;">
+            <span class="footer-wordmark">Grissom</span>
+        </div>
+        <div class="footer-links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms of Use</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; {{ current_year }} Grissom Corporate Services. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

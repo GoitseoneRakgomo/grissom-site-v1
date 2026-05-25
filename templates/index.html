@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Grissom — Corporate Services{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="progress-bar"></div>
+    
+    <nav id="main-nav">
+        <a href="/" class="nav-logo" id="nav-logo">
+            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" alt="Grissom Logo" class="nav-logo-mark">
+            <span class="nav-wordmark">Grissom</span>
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <a href="mailto:info@grissomsa.com" class="nav-contact" id="nav-contact">info@grissomsa.com</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="padding:0;max-width:100%;margin:0;">
+        <div class="hero-left">
+            <div class="hero-left-img" style="background-image: url('{{ url_for('static', filename='images/hero-left.jpg') }}')"></div>
+            <div class="hero-left-overlay"></div>
+            <div class="hero-left-content">
+                <p class="hero-eyebrow">Corporate Services</p>
+                <h1 class="hero-title">
+                    <span class="title-word">Integrated</span>
+                    <span class="title-word">Corporate</span>
+                    <span class="title-word">Services</span>
+                </h1>
+                <p class="hero-subtitle">Streamlined support for group operations and governance</p>
+            </div>
+        </div>
+        <div class="hero-right">
+            <p class="hero-intro">Grissom provides centralised corporate services to support the administration and governance of associated companies within a group structure.</p>
+            <div class="divider-line"></div>
+            <p class="hero-body">We manage internal operations, ensuring consistent compliance, efficient administration, and seamless coordination across all entities in the group. Our services enable individual businesses to focus on their core operations while maintaining structured governance and organisational continuity.</p>
+        </div>
+    </section>
+
+    <!-- WHAT WE DO SECTION -->
+    <div class="what-we-do">
+        <div class="what-we-do-inner">
+            <div class="wwd-photo">
+                <div class="wwd-photo-img" style="background-image: url('{{ url_for('static', filename='images/what-we-do.jpg') }}')"></div>
+            </div>
+            <div class="wwd-right">
+                <p class="wwd-section-label">What We Do</p>
+                <h2 class="wwd-heading">
+                    <span class="wwd-line">Centralised support</span>
+                    <span class="wwd-line">across the group</span>
+                </h2>
+                <p class="wwd-para">Grissom coordinates internal corporate services that support the ongoing structure and administration of associated companies. These services ensure that each entity operates within an organised and consistent framework while maintaining appropriate governance and operational alignment.</p>
+                <p class="wwd-para">Our role is to provide centralised support across the group so that individual businesses can focus on their own operations while maintaining appropriate structural and administrative continuity.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- APPROACH SECTION -->
+    <div class="approach-section">
+        <div class="approach-photo-bg">
+            <div class="approach-photo-bg-img" style="background-image: url('{{ url_for('static', filename='images/approach.jpg') }}')"></div>
+            <div class="approach-photo-bg-overlay"></div>
+            <div class="approach-photo-content">
+                <p class="approach-over-label">Our Approach</p>
+                <p class="approach-big-quote">Structured governance with operational flexibility for group entities</p>
+            </div>
+        </div>
+        <div class="approach-cards-wrap">
+            <div class="approach-cards-inner">
+                <div class="approach-grid">
+                    <div class="approach-card">
+                        <div class="approach-num">01</div>
+                        <h3 class="approach-title">Governance</h3>
+                        <p class="approach-body">Ensuring regulatory compliance and structural alignment across all group entities while maintaining clear oversight and accountability.</p>
+                    </div>
+                    <div class="approach-card">
+                        <div class="approach-num">02</div>
+                        <h3 class="approach-title">Administration</h3>
+                        <p class="approach-body">Managing day-to-day operational requirements, documentation, and administrative processes that support group cohesion.</p>
+                    </div>
+                    <div class="approach-card">
+                        <div class="approach-num">03</div>
+                        <h3 class="approach-title">Coordination</h3>
+                        <p class="approach-body">Facilitating communication and resource sharing between entities while respecting operational independence and business autonomy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-inner">
+            <p class="faq-label">Frequently Asked Questions</p>
+            <h2 class="faq-heading">Grissom — Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What is Grissom?</h3>
+                <p class="faq-answer">Grissom is an internal corporate services company that provides governance, administrative and coordination support for a defined group of associated businesses.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Who can use Grissom's services?</h3>
+                <p class="faq-answer">Grissom serves a specific group of associated companies and is not available to external third-party clients.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What areas does Grissom support?</h3>
+                <p class="faq-answer">We support governance, administration, entity structuring, and group coordination while preserving the operational independence of each individual business.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How do I contact Grissom?</h3>
+                <p class="faq-answer">For enquiries, email <a href="mailto:info@grissomsa.com">info@grissomsa.com</a> or visit our contact page.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ENQUIRIES SECTION -->
+    <div class="enquiries-section">
+        <div class="enquiries-inner">
+            <div class="enquiries-left">
+                <p class="enq-label">Let's Talk</p>
+                <h2 class="enquiries-heading">
+                    <span class="enq-line">Ready to discuss</span>
+                    <span class="enq-line">your requirements?</span>
+                </h2>
+                <p class="enquiries-sub">Reach out to learn more about how Grissom can support your group's corporate services needs.</p>
+            </div>
+            <div class="enquiries-right">
+                <p class="enquiries-label">Contact</p>
+                <a href="mailto:info@grissomsa.com" class="enquiries-email">info@grissomsa.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" alt="Grissom Logo" class="nav-logo-mark" style="width: 24px; height: 24px;">
+            <span class="footer-wordmark">Grissom</span>
+        </div>
+        <div class="footer-links">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms of Use</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; {{ current_year }} Grissom Corporate Services. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

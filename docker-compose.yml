@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: grissom-flask
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      - FLASK_DEBUG=True
+    volumes:
+      - .:/app
+    networks:
+      - grissom-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  grissom-network:
+    driver: bridge
+
+# Usage:
+# docker-compose up -d          # Start in background
+# docker-compose down           # Stop containers
+# docker-compose logs -f        # View logs
+# docker-compose ps             # See running containers
