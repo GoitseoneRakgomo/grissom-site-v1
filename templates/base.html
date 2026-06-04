@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Grissom Corporate Services{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  <nav>
+  <a href="/" class="nav-logo">
+    <img
+      src="{{ url_for('static', filename='logos/qq.png') }}"
+      style="width: auto; height: 70px;"
+      alt="Grissom Logo"
+    />
+  </a>
+  <ul class="nav-links">
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#approach">Approach</a></li>
+    <li><a href="/#est">Estimate</a></li>
+    <li><a href="/#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:4px;">
+          <a href="/" class="nav-logo">
+            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" style="width:auto; height:40px;" alt="Grissom Logo" />
+          </a>
+          <span class="nav-logo-text">GRISSOM</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="mailto:info@grissomsa.com">info@grissomsa.com</a></li>
+          <li><a href="tel:+27115550198">(011) 555-0198</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <ul>
+          <li>Johannesburg, GP</li>
+          <li>South Africa</li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

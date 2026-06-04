@@ -1,46 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Grissom — Corporate Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-<body>
-    <div id="progress-bar"></div>
-    <nav id="main-nav">
-        <a href="/" class="nav-logo" id="nav-logo">
-            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" alt="Grissom Logo" class="nav-logo-mark">
-            <span class="nav-wordmark">Grissom</span>
-        </a>
-        <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-        </div>
-        <a href="mailto:info@grissomsa.com" class="nav-contact" id="nav-contact">info@grissomsa.com</a>
-    </nav>
+{% extends "base.html" %}
 
-    <section class="hero" style="padding:0;max-width:100%;margin:0;">
-        <div class="hero-left">
-            <div class="hero-left-img" style="background-image: url('{{ url_for('static', filename='images/hero-left.jpg') }}')"></div>
-            <div class="hero-left-overlay"></div>
-            <div class="hero-left-content">
-                <p class="hero-eyebrow">About Grissom</p>
-                <h1 class="hero-title">
-                    <span class="title-word">Internal</span>
-                    <span class="title-word">Corporate</span>
-                    <span class="title-word">Services</span>
-                </h1>
-                <p class="hero-subtitle">Supporting the group with governance, structure and operational alignment.</p>
-            </div>
-        </div>
-        <div class="hero-right">
-            <p class="hero-intro">Grissom functions as a centralized corporate services company, providing structural, administrative, and strategic support to a defined group of associated businesses.</p>
-            <div class="divider-line"></div>
-            <p class="hero-body">The focus is on internal coordination, ensuring each entity operates within an aligned framework while preserving operational independence for each business.</p>
-        </div>
+{% block title %}About Grissom — Corporate Services{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+  <div class="hero-image" style="background-image: url('{{ url_for('static', filename='images/t1.jpg') }}')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Who We Are</div>
+    <h1>About Grissom</h1>
+    <p>
+      Delivering trusted intelligence, strategic insight, and innovative solutions to support informed decision-making and organisational success.
+    </p>
+  </div>
+</section>
+</section>
+
+    <section class="content-section" style="padding: 64px 24px; max-width: 900px; margin: 0 auto;">
+        <h2 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.2rem; margin-bottom: 12px;">Grissom</h2>
+        <p style="color: var(--muted); font-size: 1.1rem; margin-bottom: 32px;">Corporate Services for Associated Companies</p>
+        
+        <p style="text-align: justify; line-height: 1.8; color: var(--text); margin-bottom: 24px;">Grissom is a corporate services company that supports a group of associated businesses operating across multiple jurisdictions. Grissom provides structural, administrative, and strategic support to ensure each entity is established, maintained, and operated within a consistent and well-governed framework. Our role is to coordinate internal services that allow the businesses within the group to operate efficiently and remain properly structured over the long term.</p>
+
+        <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px;">What We Do</h3>
+        <p style="text-align: justify; line-height: 1.8; color: var(--text); margin-bottom: 16px;">Grissom coordinates internal corporate services that support the ongoing structure and administration of associated companies. These services ensure that each entity operates within an organized and consistent framework while maintaining appropriate governance and operational alignment.</p>
+        
+        <p style="text-align: justify; line-height: 1.8; color: var(--text); margin-bottom: 24px;">Our role is to provide centralized support across the group so that individual businesses can focus on their own operations while maintaining appropriate structural and administrative continuity.</p>
+
+        <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px;">Our Approach</h3>
+        <p style="text-align: justify; line-height: 1.8; color: var(--text); margin-bottom: 24px;">We focus on stability, structure, and long-term oversight. By maintaining consistent frameworks and coordinated internal services, Grissom supports the orderly development and management of companies operating across multiple jurisdictions.</p>
+
+        <h3 style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.6rem; margin-top: 40px; margin-bottom: 16px;">Enquiries</h3>
+        <p style="text-align: justify; line-height: 1.8; color: var(--text);">For general enquiries, please direct correspondence to info@grissomsa.com</p>
     </section>
 
     <div class="faq-section">
@@ -78,19 +70,4 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer-logo">
-            <img src="{{ url_for('static', filename='logos/grissom-logo.svg') }}" alt="Grissom Logo" class="nav-logo-mark" style="width: 24px; height: 24px;">
-            <span class="footer-wordmark">Grissom</span>
-        </div>
-        <div class="footer-links">
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms of Use</a>
-            <a href="/contact">Contact</a>
-        </div>
-        <p class="footer-copy">&copy; {{ current_year }} Grissom Corporate Services. All rights reserved.</p>
-    </footer>
-
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-</body>
-</html>
+{% endblock %}
