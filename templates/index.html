@@ -1,8 +1,42 @@
 {% extends "base.html" %}
 
-{% block title %}Grissom Corporate Services — Home{% endblock %}
+{% block title %}Grissom Corporate Services Home{% endblock %}
 
 {% block content %}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+  .hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42pt;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .purpose-text .section-title,
+  .about-header .section-title,
+  .approach-content .section-title,
+  .cta-section .section-title,
+  .services .section-title,
+  .associated-text .section-title,
+  .estimate-content .section-title,
+  .recruitment-text .section-title,
+  .contact-form-section .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36pt;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .principle-card h3,
+  .service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+</style>
 
 <!-- HERO -->
 <section class="hero">
@@ -11,7 +45,7 @@
   <div class="hero-content">
     <div class="hero-badge">Corporate Services</div>
     <h1>Integrated Corporate Services</h1>
-    <p>Streamlined support for group operations and governance.</p>
+    <p>Grissom is a corporate services company providing structural, administrative, governance, recruitment, and strategic support to businesses operating across multiple jurisdictions.</p>
   </div>
 </section>
 
@@ -21,14 +55,35 @@
     <div class="purpose-text" data-animate="fade-right">
       <p class="section-label">Our Purpose</p>
       <div class="divider-accent"></div>
-      <h2 class="section-title">The Foundation Behind Every Successful Business</h2>
+      <h2 class="section-title" style="font-size: 20pt;">The Foundation Behind Every Successful Business</h2>
       <p>Behind every successful business is a foundation of systems, processes, governance, and administration that allows it to operate effectively. Grissom was established to provide that foundation.</p>
-      <p>As businesses grow, expand into new markets, and operate across multiple jurisdictions, the complexity of administration, coordination, and oversight increases significantly. Grissom exists to ensure that these essential functions remain organized, consistent, and properly managed.</p>
-      <p>By centralising key support services, we help associated companies maintain stability, efficiency, and continuity while allowing leadership teams to focus on their respective industries and areas of expertise.</p>
+      <p>As businesses grow, expand into new markets, and operate across multiple jurisdictions, the complexity of administration, coordination, and oversight increases significantly. Grissom exists to ensure that these essential functions remain organised, consistent, and properly managed.</p>
+      <p>By centralising key support services, we help companies maintain stability, efficiency, and continuity while allowing leadership teams to focus on their respective industries and areas of expertise.</p>
     </div>
     <div class="purpose-image" data-animate="fade-left">
-      <!-- Add your purpose image: /static/images/purpose.jpg -->
-      <img src="/static/images/t3.jfif" alt="Our Purpose" />
+      <img src="/static/images/t6.jfif" alt="Our Purpose" />
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-inner">
+    <div class="about-header">
+      <p class="section-label">Who We Are</p>
+      <div class="divider-accent"></div>
+      <h2 class="section-title">Corporate Services for Associated Companies</h2>
+    </div>
+    <div class="about-content">
+      <p>
+        Grissom is a corporate services company providing structural, administrative, governance, recruitment, and strategic support to businesses operating across multiple jurisdictions. Acting as a central coordination function, Grissom supports the establishment, administration, and organisational support of companies.
+      </p>
+      <p>
+        Through consistent processes, centralised oversight, and shared support services, we help maintain operational continuity while allowing each business to focus on its own objectives and areas of expertise.
+      </p>
+      <p>
+        Our role is to provide the framework, support systems, and organisational structure that enable companies to operate efficiently, remain appropriately governed, and develop sustainably over the long term.
+      </p>
     </div>
   </div>
 </section>
@@ -40,10 +95,7 @@
     <div class="divider-accent" data-animate="fade-up"></div>
     <h2 class="section-title" data-animate="fade-up">Everything We Do Is Guided by Four Principles</h2>
     <p class="section-sub" data-animate="fade-up">
-      Structured governance with operational flexibility for group entities.
-      Our role is to provide centralised support across the group so that
-      individual businesses can focus on their own operations while
-      maintaining appropriate structural and administrative continuity.
+      Structure, continuity, stewardship, and discretion these principles shape how we support companies and approach long-term organisational management.
     </p>
   </div>
   <div class="principles-grid" data-stagger>
@@ -52,41 +104,40 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
       </div>
       <h3>Structure</h3>
-      <p>Strong organisations are built on clear frameworks, defined responsibilities, and effective processes.</p>
+      <p>Strong organisations are built upon clear frameworks, defined responsibilities, and effective processes. A well-structured foundation creates clarity, accountability, and operational efficiency.</p>
     </div>
     <div class="principle-card">
       <div class="principle-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
       </div>
       <h3>Continuity</h3>
-      <p>Consistency across companies, jurisdictions, and teams helps support long-term stability and operational resilience.</p>
+      <p>Through centralised support and coordinated administration, Grissom helps promote stability, operational resilience, and alignment across different businesses, teams, and regions.</p>
     </div>
     <div class="principle-card">
       <div class="principle-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
       <h3>Stewardship</h3>
-      <p>We take a long-term view of the businesses we support, focusing on sustainable development rather than short-term outcomes.</p>
+      <p>We emphasise responsible management, sustainable growth, and long-term value creation helping maintain the foundations that allow companies to develop responsibly and remain well-positioned for the future.</p>
     </div>
     <div class="principle-card">
       <div class="principle-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
       </div>
       <h3>Discretion</h3>
-      <p>Professionalism, confidentiality, and responsible management remain central to the way we operate.</p>
+      <p>We recognise the importance of professionalism, confidentiality, and responsible management in corporate operations, approaching every responsibility with integrity and sound judgment.</p>
     </div>
   </div>
 </section>
 
-
 <!-- CTA -->
 <section class="cta-section" data-animate="fade-up">
-  <p class="section-label">Ready to Start?</p>
+  <p class="section-label">Ready to discuss your requirements?</p>
   <div class="divider-accent"></div>
-  <h2 class="section-title">Let's Build Something That Lasts</h2>
-  <p>Contact our team today and get a no-obligation estimate for your corporate services project.</p>
+  <h2 class="section-title">Let's Talk</h2>
+  <p>Reach out to learn more about how Grissom can support your corporate services needs.</p>
   <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-    <a href="/#contact" class="btn-primary">Get Quote</a>
+    <a href="/#contact" class="btn-primary">Contact Us</a>
     <a href="mailto:info@grissomsa.com" class="btn-outline">Email us</a>
   </div>
 </section>
@@ -103,7 +154,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="11" rx="1"/><path d="M3 10l9-7 9 7"/><path d="M9 21V14h6v7"/></svg>
       </div>
       <h3>Corporate Administration</h3>
-      <p>Supporting the establishment, maintenance, and administration of business entities across multiple jurisdictions including records, documentation, and entity maintenance.</p>
+      <p>Supporting the establishment, maintenance, and administration of business entities across multiple jurisdictions, including corporate record management, document administration, internal reporting coordination, and entity maintenance support.</p>
       <a href="/#contact" class="btn-link">Learn More &#8594;</a>
     </article>
     <article class="service-card">
@@ -111,19 +162,15 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
       <h3>Governance &amp; Oversight</h3>
-      <p>Supporting consistent governance frameworks across associated businesses, including policy administration, documentation, and compliance coordination.</p>
+      <p>Supporting consistent governance frameworks across businesses, including corporate governance coordination, internal policy administration, documentation management, organisational structure support, and compliance coordination.</p>
       <a href="/#contact" class="btn-link">Learn More &#8594;</a>
     </article>
-
-
-    
-
     <article class="service-card">
       <div class="service-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
       </div>
       <h3>Recruitment &amp; Talent</h3>
-      <p>Managing end-to-end recruitment on behalf of associated companies, from workforce planning and candidate sourcing through to onboarding coordination.</p>
+      <p>Managing recruitment activities on behalf of companies and clients from workforce planning and candidate sourcing through to application screening, interview scheduling, employment documentation, and onboarding coordination.</p>
       <a href="/#contact" class="btn-link">Learn More &#8594;</a>
     </article>
     <article class="service-card">
@@ -131,7 +178,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7l3-7z"/></svg>
       </div>
       <h3>Strategic Coordination</h3>
-      <p>Supporting communication, coordination, and alignment between associated companies including cross-company projects and organisational planning.</p>
+      <p>Supporting communication, coordination, and alignment between companies, including cross-company coordination, internal project support, organisational planning assistance, and business support initiatives.</p>
       <a href="/#contact" class="btn-link">Learn More &#8594;</a>
     </article>
     <article class="service-card">
@@ -139,7 +186,15 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16M4 21V8l8-5 8 5v13"/><rect x="9" y="14" width="6" height="7"/></svg>
       </div>
       <h3>Operational Support</h3>
-      <p>Providing practical administrative support for efficient day-to-day operations including supplier coordination, scheduling, and information management.</p>
+      <p>Providing practical administrative support for efficient day-to-day operations, including internal administrative support, supplier coordination, documentation management, scheduling support, and information management.</p>
+      <a href="/#contact" class="btn-link">Learn More &#8594;</a>
+    </article>
+    <article class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+      </div>
+      <h3>Executive Support</h3>
+      <p>Providing dedicated executive and administrative support to leadership teams through calendar management, travel coordination, meeting administration, and board support ensuring efficient organisation and day-to-day operational effectiveness.</p>
       <a href="/#contact" class="btn-link">Learn More &#8594;</a>
     </article>
   </div>
@@ -151,7 +206,7 @@
     <div class="associated-text">
       <p class="section-label">Associated Companies</p>
       <div class="divider-accent"></div>
-      <h2 class="section-title">A Group Operating Across Multiple Industries</h2>
+      <h2 class="section-title" style="width: 100%; font-size: 2rem;">A Group Operating Across Multiple Industries</h2>
       <p>Grissom provides support services to a number of associated businesses operating across multiple industries and jurisdictions. These businesses maintain independent operations, leadership structures, and commercial objectives while benefiting from centralised support and administrative coordination.</p>
     </div>
     <div class="industries-grid" data-stagger>
@@ -173,11 +228,10 @@
     <p class="section-label">International Operations</p>
     <div class="divider-accent"></div>
     <h2 class="section-title">Supporting Growth Across Jurisdictions</h2>
-    <p>Businesses operating internationally face unique challenges. Different regulatory environments, operational requirements, and cultural considerations all contribute to increased complexity. Grissom helps provide consistency across these environments while supporting the individual requirements of each business and jurisdiction.</p>
-    <a href="/#contact" class="btn-primary" style="align-self: flex-start;">Get in Touch <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <p>Businesses operating internationally face unique challenges. Different regulatory environments, operational requirements, administrative processes, and cultural considerations all contribute to increased complexity. Grissom helps provide consistency across these environments by maintaining centralised administrative frameworks while supporting the individual requirements of each business and jurisdiction. Our focus is on ensuring that growth remains structured, sustainable, and supported by appropriate systems and processes.</p>
+    <a href="/#contact" class="btn-primary" style="align-self: flex-start;">Get in Touch <svg width="26" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
   <div class="estimate-image" data-animate="fade-left">
-    <!-- Add your jurisdictions image: /static/images/jurisdictions.jpg -->
     <img src="/static/images/what-we-do.jpg" alt="Supporting growth across jurisdictions" />
   </div>
 </section>
@@ -189,12 +243,12 @@
       <p class="section-label">Careers</p>
       <div class="divider-accent"></div>
       <h2 class="section-title">Recruitment</h2>
-      <p>Grissom serves as the central recruitment function for associated companies within the group. Vacancies advertised by Grissom may relate to opportunities across a range of industries including consulting, financial services, physical assets, distribution, security, luxury goods, and other commercial sectors.</p>
-      <p>We recruit for a wide range of positions including executive and management roles, administrative positions, creative and marketing professionals, sales personnel, technical specialists, operational support staff, and graduate opportunities.</p>
+      <p>Grissom serves as the central recruitment function for companies. Vacancies advertised by Grissom may relate to opportunities across a range of industries, including consulting, financial services, distribution, security, luxury goods, and other commercial sectors.</p>
+      <p>We are continually interested in connecting with talented professionals who share our commitment to professionalism, attention to detail, and high standards of work. We recruit for a wide range of positions including executive and management roles, administrative positions, creative and marketing professionals, sales personnel, technical specialists, operational support staff, and graduate opportunities.</p>
+      <p>While recruitment activities are coordinated through Grissom, successful candidates may be employed, contracted, or otherwise engaged directly by the relevant operating company or associated business.</p>
       <a href="mailto:careers@grissomsa.com" class="btn-primary" style="margin-top: 24px; display: inline-flex;">careers@grissomsa.com <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
     <div class="recruitment-image" data-animate="fade-left">
-      <!-- Add your recruitment image: /static/images/recruitment.jpg -->
       <img src="/static/images/t4.jfif" alt="Recruitment at Grissom" />
     </div>
   </div>
@@ -206,7 +260,7 @@
     <p class="section-label">Ready to discuss your requirements?</p>
     <div class="divider-accent"></div>
     <h2 class="section-title">Let's Talk</h2>
-    <p>Reach out to learn more about how Grissom can support your group's corporate services needs.</p>
+    <p>Reach out to learn more about how Grissom can support your corporate services needs. We aim to respond to all enquiries promptly and direct correspondence to the appropriate party where necessary.</p>
     <a href="/#contact" class="btn-primary" style="align-self: flex-start;">Contact <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
   <div class="estimate-image" data-animate="fade-left">
@@ -219,7 +273,7 @@
   <p class="section-label" data-animate="fade-up">Direct Communication</p>
   <div class="divider-accent" data-animate="fade-up"></div>
   <h2 class="section-title" data-animate="fade-up">Send us an Enquiry</h2>
-  <p class="section-sub" data-animate="fade-up">Reach out with any questions about Grissom's corporate services and internal coordination capabilities.</p>
+  <p class="section-sub" data-animate="fade-up">We aim to respond to all enquiries promptly and direct correspondence to the appropriate party where necessary.</p>
   <div class="contact-channels" data-stagger>
     <div class="contact-channel">
       <span class="contact-channel-label">General Enquiries</span>
@@ -258,6 +312,5 @@
     <button type="submit" class="btn-primary">Send Enquiry</button>
   </form>
 </section>
-
 
 {% endblock %}

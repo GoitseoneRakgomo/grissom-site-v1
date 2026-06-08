@@ -81,8 +81,19 @@ nav {
 
 .estimate-section { display: grid; grid-template-columns: 1fr 1fr; min-height: 420px; }
 .estimate-content { background: var(--navy); padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; }
-.estimate-content .section-label { text-align: left; color: rgba(255,255,255,0.55); opacity: 1; }
-.estimate-content .section-title { text-align: left; color: var(--white); font-size: 46px; margin-bottom: 18px; }
+
+.estimate-content .section-title {
+  text-align: left;
+  color: var(--white);
+  max-width: (none set — good)
+}
+
+.estimate-content p {
+  color: rgba(255,255,255,0.65);
+  max-width: 380px; /* ← REMOVE THIS LINE */
+  margin-bottom: 34px;
+  line-height: 1.8;
+}
 .estimate-content p { color: rgba(255,255,255,0.65); font-size: 15px; max-width: 380px; margin-bottom: 34px; line-height: 1.8; }
 .estimate-image { position: relative; overflow: hidden; }
 .estimate-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
