@@ -64,3 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 });
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    const body = btn.nextElementSibling;
+    if (expanded) {
+      btn.setAttribute('aria-expanded', 'false');
+      body.style.maxHeight = '0';
+    } else {
+      btn.setAttribute('aria-expanded', 'true');
+      body.style.maxHeight = body.scrollHeight + 'px';
+    }
+  });
+});
